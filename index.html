@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Chef player, Recipe Rush!</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>            <div class="wrap">
+        <div id="ordersPanel" class="orders"></div>
+            <h1> Chef Player - <span style="color:#ff6b6b">Recipe Rush!</span></h1>
+            <div class="sub">Follow the recipe steps <strong>in order</strong>. Mess up and the dish gets replaced. Don't choke, chef</div>
+            <div class="hud">
+        <div class="pill score"><strong id="points">0</strong> <span class="tiny">Point</span> | <span class="combo" id="streak">x1</span></div>
+        <button class="btn" id="startBtn">Start Cooking</button>
+        <button class="btn" id="freeCookBtn">Free Cook Mode</button>
+        <div style="display: flex; gap: 10px; align-items: center; justify-self: end;">
+                    <div class="pill high"><strong id="high">0</strong> <span class="tiny">Best</span></div>
+             <div id="mute" class="mute" title="Toggle sound">Mute</div>
+        </div>
+        <div class="pill money"><strong id="money">100</strong> <span class="tiny">Money</span></div>
+            </div>
+            <div class="grid">
+            <div class="card">
+                <div class="recipe-title"><span class="emoji" id="recipeEmoji"></span><span id="recipeName">--</span></div>
+                <div class="steps" id="steps"></div>
+
+                <div class="actions" id="moves"></div>
+                <button id="finishFreeCook" class="btn" style="display:none; margin-top: 12px;">Finish my magical recipe</button>
+                <div class="hint">Hold actions show a progress bar. Release too early or too late = fail.</div>
+            </div>
+
+            <div class="card">
+                <div class="pan" id="pan">
+                    <div class="bubbles" id="bubbles"></div>
+                </div>
+                <div class="timer">
+                        <strong id="leftTime">-</strong> seconds left this Recipe
+                        <div class="bar" style="margin-top: 8px;"><div id="timeBar"></div></div>
+                </div>
+                <div class="hint">Timer only runs while a recipe is active. Completing a recipe resets the clock and speeds things up</div>
+            </div>
+        </div>
+            </div>
+            <div id="dishReview" class="review hidden">
+                <div class="review-content">
+                    <h2 id="reviewTitle"></h2>
+                    <div id="reviewStars" class="stars"></div>
+                    <p id="reviewFlavor"></p>
+                    <p id="reviewCuisine"></p>
+                    <p id="reviewSynergy"></p>
+                    <p id="reviewName"></p>
+                    <button id="closeReview" class="btn">Close</button>
+                </div>
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html>
