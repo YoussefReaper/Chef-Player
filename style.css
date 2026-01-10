@@ -162,7 +162,7 @@
     overflow: hidden;
 }.bar > div {
     height: 100%;
-    background: linear-gradient(90deg, #ff0000, #ca0704);
+    background: black;
     width: 100%;
 }.combo {
     font-weight: 900;
@@ -200,7 +200,7 @@
 }.review{
     position: fixed;
     inset: 0;
-    background: #000000aa;
+    background: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -271,7 +271,7 @@
     overflow: hidden;
 }.order-timer-fill{
     height: 100%;
-    background: linear-gradient(90deg, #ff4d4d, #ffb84d);
+    background: black;
     width: 100%;
     transition: width 0.1s linear;
 }@keyframes popIn {
