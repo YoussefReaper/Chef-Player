@@ -1,10 +1,10 @@
 :root {
-    --bg1: #060021;
-    --bg2: #1b150c;
-    --card: #3a3a3a;
-    --ink: #bb00ff;
-    --accent: #ff6b6b;
-    --accent2: #7dd56f;
+    --bg1: grey;
+    --bg2: white;
+    --card: blue;
+    --ink: purple;
+    --accent: yellow;
+    --accent2: red;
     --accent3: #000000;
     --accent4: #6d6d6d;
     --shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
@@ -13,7 +13,7 @@
 }body {
     margin: 0;
     font-family: ui-rounded, 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: radial-gradient(1000px 600px at 50% -10%, var(--bg2), var(--bg1));
+    background: grey;
     color: var(--ink);
     user-select: none;
 }.wrap {
